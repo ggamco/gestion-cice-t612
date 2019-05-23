@@ -4,6 +4,8 @@ server:
 
 #CONFIGURACION H2
 spring:
+  application:
+    name: GESTION-CICE
   h2:
     console:
       enabled: true
@@ -22,3 +24,10 @@ spring:
     password:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:gestion-cice
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
