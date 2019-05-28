@@ -1,5 +1,6 @@
 package com.ciceonline.gestioncice.controller.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,10 +14,11 @@ import java.util.List;
 @Accessors(chain = true)
 public class CursoDTO {
 
-    private Long id;
+    //private Long id;
+    @JsonProperty
     private String nombre;
-    private AulaDTO aula;
-    private ProfesorDTO profesor;
-    private List<AlumnoDTO> alumnos;
+    //private AulaDTO aula;
+    //private ProfesorDTO profesor;
+    //private List<AlumnoDTO> alumnos;
 
 }
